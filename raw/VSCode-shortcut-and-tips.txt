@@ -1,0 +1,62 @@
+Visual Studio Code Shortcuts
+
+Ctrl + Shift + P - Multifunctional menu
+Ctrl + P - find indexed file in workspace
+
+Select & Edit:
+F2 - local variable rename
+Ctrl + X - Cut line
+Ctrl + L - Select line
+Ctrl + H - Replace menu
+Ctrl + F - Find menu (find selection the cursor on)
+Ctrl + / - Comment line
+Alt + Shift + UpArrow / DownArrow - Duplicate current string upper / below
+Insert / Numpad 0 - go to overtype mode
+
+Multicursor:
+Ctrl + D - Multicursor by next selection entry under cursor
+Ctrl + Alt + UpArrow / DownArrow  (Ctrl + Alt on Windows) - Multicursor selection up / down
+
+Move:
+Alt + UpArrow / DownArrow - Move line up/down 
+
+Code edititng:
+Ctrl + Space - suggestions
+Ctrl + P : - Goto line
+Ctrl + Shift + O - Open outline menu and move to token
+
+
+F12 - go to definition of token (for e.g. of method or function)
+Alt + O - Switch between header and source files (relevant for C and C++)
+Ctrl + T - find token or go to definition/declaration of function that your cursor at (in C or C++)
+
+Mathing brackets:
+Ctrl + Shift + | - Go to matching bracket ( {}, [], () )
+Shift + Alt + LeftArrow / RightArrow - selection in mathing brackets
+
+Terminal:
+Ctrl + Shift + ` - Open terminal
+
+Creating and closing tabs:
+Ctrl + K - tabs handle
+Ctrl + K w - Close all tabs
+Ctrl + W - Close One tab
+Ctrl + Alt + LeftArrow / RightArrow - Create split view and move active tab to left / right side
+
+Split view:
+Ctrl + | - Split view
+Ctrl + K LeftArrow RightArrow - Move active tab to left/right
+Ctrl + PageUp / PageDown - Change active tab to right / left
+
+Bars:
+Ctrl + B - Hide side bar
+Ctrl + J - Hide bottom bar (terminal)
+
+Indent:
+Shift + Tab - Remove tabulation
+Shift + Alt + F - Format file with default formatter
+Ctrl + K Ctrl + F - Format selection (Ctrl + K g in my config)
+
+
+
+

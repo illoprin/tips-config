@@ -1,0 +1,14 @@
+install python3venv for LazyVim extensions
+sudo apt install libstdc++-12-dev (for clang C++ snippets)
+
+Leader key - Space
+
+Shift + Ctrl + - - Toggle terminal
+Ctrl + H/L - Switch active tab
+Leader+c - Code actions (rename/actions and etc.)
+Shift + k - show info about object
+Leader+s+i - Search icons and emoji
+Leader+s+t - Search for TODOs (needs todo-comments and rg plugins)
+Leader+s+k - Search for keymaps
+Leader+f+c - Search for LazyVim config files
+Leader+c+s - Code outline

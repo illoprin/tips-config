@@ -1,0 +1,132 @@
+touch hello-world.txt - create new file
+touch h1.txt h2.txt g4.txt - create some files
+truncate --size=45M somefile - fill file data to some size
+
+---- mkdir ----
+mkdir folder - create new directory
+mkdir -p dir1/dir2/dir3 - create few nested directories at once
+
+---- cd ----
+cd .. - move to upwarding directory
+
+---- mv ----
+mv hello-world.txt goodbye-world.txt - rename file
+mv old_dir_name new_dir_name - rename directory
+mv file.txt path/to/new_directory - move file to new directory
+mv -r path/to/old_directory path/to/new_directory - move file to new directory
+
+---- cp ----
+cp source_file.txt destination/folder - copy file to other directory
+cp -R path/to/source path/to/destination - copy directory recursively
+
+---- rm ----
+rm file_to_remove.txt - remove file
+rm -drf path/to/dir/to_delete - remove directory recursively including files in it
+rm -i - delete files with confirm of their deleting
+rm -d - delete directory, unpack files from it
+
+---- ls ----
+ls some_directory - show contents in dir
+ls -a - show hidden files and dirs
+ls -lt - sort files by last change time
+ls -c - show contents in table
+ll - yet another one
+
+---- find ----
+find dirname searchType searchPattern
+find . -name '*.txt' - show all files with .txt extension
+find . -mtime -1 - show all files changed last 24 hours
+
+---- chmod ----
+chmod +x bash_script.sh - make file exicutable
+
+---- tar ----
+tar -cvf archive.tar directory_to_archive - pack directory
+tar -xvf archive.tar - unpack directory
+
+---- Process ----
+ps aux - show all active process
+kill pid_number - stop process
+kill -9 pid_number - force stop process
+htop - terminal app for viewing all work processes in real time
+
+---- Linux Kernel Operations ----
+sudo modprobe [module-name] - load new module to linux kernel
+sudo modprobe -r [module-name] - delete module from linux kernel
+lsmod - show all linux kernel custom modules
+lsmod | grep [module-name] - find loaded module from output of 'lsmod' command
+uname -r - view kernel version
+neofetch - destribution info
+
+---- grep ----
+[command] | grep [string] - find entity named [string] from output of command [command]
+grep '[key]' [filename] - find string in file
+
+---- nano ----
+nano filename.txt sudo nano filename.txt
+
+---- man ----
+man commandName - get tips by comand
+command_name --help - get brief tips by command
+
+---- http ----
+sending requests to server:
+	curl [options] [URL]
+	functional utility to sending different requests by http protocol
+
+	Simple GET request:
+		curl https://example.com/books
+	Save result of request to file:
+		curl -o output.html https://example.com/
+	GET request with headers:
+		curl -H "Content-Type: application/json" -H "Authorization: Bearer YOUR_TOKEN" [URL]
+	POST request with json body:
+		curl -X POST -d '{"key1": 10, "key2": "value2"}' -H "Content-Type: application/json" [URL]
+	POST request with json body from file:
+		curl -X POST -d @data.json -H "Content-Type: application/json" [URL]
+	Send form-data:
+		curl -F "file=@path/to/file" [URL]
+	Save cookies to file:
+		curl -c cookies.txt [URL]
+	Send request with cookies:
+		curl -b cookies.txt [URL]
+	Send request with basic auth:
+		curl -u username:passord [URL]
+	Send request with Bearer Token:
+		curl -H "Authorization: Bearer YOUR_TOKEN" [URL]
+	Send request from proxy server:
+		curl -x https://proxy.example.com:8080 [URL]
+	
+	Some useful keys:
+		-H - header
+		-F - file
+		-X - request type
+		-k - ignore ssl sertificate
+		-v (verbose) - show request and responce details
+		--limit-rate - limit file uploading speed (for e.g. - curl --limit-rate 100K [URL]/file.zip)
+		-I - send HEAD-request
+		-O - save file from server
+		
+wget -O downloaded.zip https://example.com/file.zip - download file from server
+	-O - write file with new name
+	--limit-rate - limit load speed
+	-c - resume stopped loading
+	-I - download several files e.g. wget -I url.txt , where url.txt is file with some addresses to files
+	--tries - specify number of attemts to download the file
+	
+	Create local copy of web-site:
+		wget --mirror -p --convert-links -P [dir_to_download] [url]
+		--convert-links - transform links to local html pages view
+		-p - download all data needs to correct html pages view
+	
+	Upload files with one type:
+		wget -r -A.txt [url]
+	
+	Upload files rejecting some types:
+		wget --reject=png [url]
+		
+dig - get ip address of server by domain name
+
+nmap [url or ip] - get avaliable ports to connect
+	-p - scan specified ports
+	-A - AGRESSIVE SCAN

@@ -1,0 +1,143 @@
+{
+	"editor.minimap.showSlider": "mouseover",
+	"files.autoSave": "onFocusChange",
+	"explorer.compactFolders": false,
+
+	// Editor
+	"editor.cursorStyle": "line",
+	"editor.cursorWidth": 2,
+	"overtype.secondaryCursorStyle": "underline",
+	"editor.stickyScroll.enabled": false,
+
+	// Font
+	"editor.fontFamily": "Cascadia Code, Consolas, monospace",
+	"editor.fontSize": 16,
+	"editor.lineHeight": 25,
+	"editor.fontLigatures": true,
+
+	// Word wrapping
+	"editor.wordWrap": "on",
+	"editor.wordWrapColumn": 60,
+
+	// Tabulation
+	"editor.tabSize": 2,
+	"editor.useTabStops": true,
+	"editor.insertSpaces": false,
+	"prettier.tabWidth": 2,
+	"prettier.useTabs": true,
+	"prettier.withNodeModules": true,
+
+	// Theming
+	"workbench.iconTheme": "vscode-icons",
+	"workbench.colorTheme": "One Dark Pro Darker",
+
+
+	// Terminal
+	"terminal.integrated.fontSize": 18,
+	"terminal.integrated.defaultProfile.windows": "Git Bash",
+
+	// Formatters
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"explorer.fileNesting.patterns": {
+		"*.ts": "${capture}.js",
+		"*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+		"*.jsx": "${capture}.js",
+		"*.tsx": "${capture}.ts",
+		"tsconfig.json": "tsconfig.*.json",
+		"package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+		"*.sqlite": "${capture}.${extname}-*",
+		"*.db": "${capture}.${extname}-*",
+		"*.sqlite3": "${capture}.${extname}-*",
+		"*.db3": "${capture}.${extname}-*",
+		"*.sdb": "${capture}.${extname}-*",
+		"*.s3db": "${capture}.${extname}-*"
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+
+	// HTML CSS Supoort
+	"html-css-class-completion.enableEmmetSupport": true,
+	"html-css-class-completion.HTMLLanguages": [
+		"jsx",
+		"tsx",
+		"html",
+		"vue",
+		"razor",
+		"blade",
+		"handlebars",
+		"twig",
+		"django-html",
+		"php",
+		"markdown",
+		"erb",
+		"ejs",
+		"svelte"
+	],
+	"html-css-class-completion.JavaScriptLanguages": [
+		"javascript",
+		"javascriptreact",
+		"typescriptreact"
+	],
+
+	// todo highlight
+	"todohighlight.include": [
+		"**/*.cpp",
+		"**/*.c",
+		"**/*.h",
+		"**/*.hpp",
+		"**/*.js",
+		"**/*.jsx",
+		"**/*.ts",
+		"**/*.tsx",
+		"**/*.html",
+		"**/*.php",
+		"**/*.css",
+		"**/*.scss"
+	],
+	"todohighlight.keywords": [
+		{
+			"text": "TODO",
+			"backgroundColor": "#0db9d7",
+			"color": "#000",
+		},
+		{
+			"text": "PERF",
+			"backgroundColor": "#bb9af7",
+			"color": "#000",
+		},
+		{
+			"text": "HACK",
+			"backgroundColor": "#e0af68",
+			"color": "#000",
+		},
+		{
+			"text": "NOTE",
+			"backgroundColor": "#10b981",
+			"color": "#000",
+		},
+		{
+			"text": "FIX",
+			"backgroundColor": "#db4b4b",
+			"color": "#000",
+		},
+		{
+			"text": "WARN",
+			"backgroundColor": "#e0af68",
+			"color": "#000",
+		},
+	],
+
+	// Misc
+}
